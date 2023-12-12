@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Collection of utility functions",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "scripts": {
     "prepack": "run-s clean build",
     "check": "run-s eslint prettier",
