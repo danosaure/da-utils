@@ -2,7 +2,6 @@ import { expect } from 'chai';
 
 import moduleToTest from './flatten-info';
 import { default as filespace } from './_.test';
-import { describe } from 'node:test';
 
 describe(filespace(__filename), () => {
   it('exports a function with 1 param', () => {
