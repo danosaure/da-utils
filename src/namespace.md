@@ -4,25 +4,35 @@ Generates a namespaced key that can be used for action. The following structure 
 
     APP-KEY.COMPONENT1.SUBCOMPONENT1
 
-src/namespace.ts
+`src/namespace.ts`
 
-    import { namespace } from '@danosaure/da-utils';
-    export default (path: string): string => namespace('APP-KEY', path);
+```typescript
+import { namespace } from '@danosaure/da-utils';
+export default (path: string): string => namespace('APP-KEY', path);
+```
 
-src/components/namespace.ts
+`src/components/namespace.ts`
 
-    export { default as namespace } from '../namespace';
+```typescript
+export { default as namespace } from '../namespace';
+```
 
-src/components/component1/namespace.ts
+`src/components/component1/namespace.ts`
 
-    import namespace from '../namespace';
-    export default (path: string): string => namespace(`Component1.${path}`);
+```typescript
+import namespace from '../namespace';
+export default (path: string): string => namespace(`Component1.${path}`);
+```
 
-src/components/component1/components/namespace.ts
+`src/components/component1/components/namespace.ts`
 
-    export { default as namespace } from '../namespace';
+```typescript
+export { default as namespace } from '../namespace';
+```
 
-src/components/component1/components/sub-componnent1/namespace.ts
+`src/components/component1/components/sub-componnent1/namespace.ts`
 
-    import namespace from '../namespace';
-    export default (path: string): string => namespace(`SubComponent1.${path}`);
+```typescript
+import namespace from '../namespace';
+export default (path: string): string => namespace(`SubComponent1.${path}`);
+```
