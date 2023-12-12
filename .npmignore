@@ -1,0 +1,8 @@
+/.eslintrc.json
+/.mocharc.json
+/.prettierrc
+/tsconfig.json
+/**/*.test.?s
+/*.tgz
+/src
+/build/**/*.map

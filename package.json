@@ -2,8 +2,9 @@
   "name": "@danosaure/da-utils",
   "version": "1.0.0",
   "description": "Collection of utility functions",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
+    "prepack": "run-s clean build",
     "check": "run-s eslint prettier",
     "clean": "rimraf build",
     "prebuild": "run-s clean eslint",
