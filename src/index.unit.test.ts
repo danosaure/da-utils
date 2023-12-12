@@ -11,4 +11,8 @@ describe(path.basename(__filename), () => {
   it('exports "flattenInfo()"', () => {
     expect(moduleToTest).has.property('flattenInfo').to.be.a('function');
   });
+
+  it('exports "namespace()"', () => {
+    expect(moduleToTest).has.property('namespace').to.be.a('function');
+  })
 });
