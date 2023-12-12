@@ -4,6 +4,9 @@
   "description": "Collection of utility functions",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepack": "run-s clean build",
     "check": "run-s eslint prettier",
